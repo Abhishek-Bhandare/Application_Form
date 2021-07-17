@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application From</title>
+  <link href="favicon.ico" rel="icon">
+  <style>
+    #bor
+    {
+        border: solid black;
+        border-radius: 5px;
+        margin-right: 150px;
+        margin-left: 150px;
+        padding: 10px;
+        padding-right: 10px;
+    }
+    .hov{
+         cursor: pointer;
+         border-radius: 5px;
+         height: 40px;
+    }
+   
+    #pad{
+      padding:  10px 20px 10px 30px;
+    }
+    #padd{
+      padding:  10px 20px 5px 30px;
+    }
+    #ovfl{
+      overflow: auto;
+    }
+    .pop{
+      cursor: pointer;
+    }
+   #rig{
+     display: flex;
+     }
+    .flexx{
+      display: flex;
+    }
+  </style>
+</head>
+<div id="bor">
+<body>
+   <form method="POST" enctype="multipart/form-data" autocomplete="off">
+    <p>
+    <h1 style="text-align: center; background-color:cyan;"><u>Application for the Post of PROJECT ENGINEER</u></h1><br>
+  <table height="60px" width="60%" style="margin-bottom: 20px;">
+    <tr>
+      <td><b>1.Position Code <br>(select one) : </b><sup style="color: red;">*</sup></td>
+      <td>
+        <select name="Code" style="height: 30px; width: 250px; margin-left: 20px;" required>
+          <option value="select" selected>Select</option>
+          <option value="Production Engineer">Project Engineer</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <hr>
+<!-- ********************************************************************************************************************* -->
+  <div class="flexx">
+  <table  height="350px" width="60%">
+    <tr>
+      <td><b>2.Name : <sup style="color: red;">*</sup></b></td>
+      <td><input type="text" name="name" required style="width: 200px; height: 20px;"></td>
+    </tr>
+
+    <tr>
+      <td><b>3.Father's<br>Name : </b><sup style="color: red;">*</sup></b></td>
+      <td><input type="text" name="fname" required style="width: 200px; height: 20px;"></td>
+    </tr>
+
+    <tr>
+      <td><b>4.Date of<br>Birth : <sup style="color: red;">*</sup></b></td>
+      <td><input type="date" name="DoB" required style="width: 100px; height: 20px;"> &nbsp;&nbsp;&nbsp;<b>Age :<input type="text" name="age" style="width: 42px; height: 20px;"></b></td>
+    </tr>
+
+    <tr>
+      <td><b>5.Gender : <sup style="color: red;">*</sup></b></td>
+      <td>
+        <select name="gender" required style="width: 210px; height: 30px;">
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+          <option value="trang">Transgender</option>
+          <option value="others">Others</option>
+          </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>6.Nationality :<sup style="color: red;">*</sup></b></td>
+      <td><input type="text" name="conuntry" style="width: 200px; height: 20px;" required></td>
+    </tr>
+
+    <tr>
+      <td><b>7.Martial<br>Status : <sup style="color: red;">*</sup></b></td>
+      <td>
+        <select name="married" style="width: 210px; height: 30px;" required>
+          <option value="select" selected>select</option>
+          <option value="married">Married</option>
+          <option value="unmarried">Unmarried</option>
+          </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>8.Whether belongs to<br>(Select one) : <sup style="color: red;">*</sup><b></td>
+      <td>
+        <input type="radio" name="category">SC
+        <input type="radio" name="category">ST
+        <input type="radio" name="category">OBC
+        <input type="radio" name="category">PWD
+        <input type="radio" name="category">GENERAL
+     </td>  
+    </tr>
+  </table>
+
+  <table style="height: 150px; width: 200px; margin-right: 50px; margin-top: 0px;">
+    <tr>
+      <td><b>Upload Your Photo <sup style="color: red;">*</sup></b></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 10px;"><input type="text" style="width: 100px; height: 120px; border-style: solid; color: black;" required></td>
+    </tr><br>
+    <tr>
+      <td style="padding-top: 10px;"><input type="file" name="photo"></td>
+    </tr>
+   
+  </table>
+</div>
+  <hr>
+<!-- ******************************************************************************************************************** -->
+   <table width="80%" height="100px">
+     <tr> 
+       <td><b>9.Proof of Identity :</b><sup style="color: red;">*</sup></td>
+        <td> <select name="identity" style="width: 300px; height: 30px;" required>
+          <option value="select" selected>Aadhar Number</option>
+          <option value="dL">Driving License</option>
+          <option value="passport">Passport</option>
+          <option value="panid">PAN CARD</option>
+          </select></td>
+       <td><input type="text" name="idnumber" required style="width: 300px; height: 25px;" placeholder="Write your Aadhar/PAN number">
+      </td>
+     </tr>
+
+     <tr>
+       <td><b>10.Address of<br>Correspondence :<sup style="color: red;">*</sup></b></td>
+       <td><textarea rows="5" cols="3" style="width: 300px;"></textarea></td>
+       <td><b> Phone Numbers (with STD Codes)</b><br>
+       <table  cellspacing="20" cellpadding="0">
+          <tr>
+            <td><b>Office:<br><input type="text" name="office" style="width: 70px;"></b></td>
+            <td><b>Residence:<br><input type="text" name="recidence" style="width: 70px;"></b></td>
+            <td><b>Mobile:<sup style="color: red;">*</sup><br><input type="text" name="mobile" style="width: 80px;"></b></td>
+          </tr>
+        </table>
+       </td>
+     </tr>
+
+     <tr>
+      <td height="100"><b>Select State: <sup style="color: red;">*</sup></b><br>
+        <select name="state" style="width: 200px; height: 30px;" required>
+          <option value="select" selected>Select State</option>
+          <option value="mahar">Maharastra</option>
+          <option value="wb">West bengal</option>
+          <option value="ut">Uttrakhand</option>
+          </select>
+      </td>
+      <td><b>Select City: <sup style="color: red;">*</sup><br>
+        <select name="city" style="width: 200px; height: 30px;" required>
+          <option value="select" selected>Select City</option>
+          <option value="mahaah">Ahmednagar</option>
+          <option value="wbkol">Kolkatta</option>
+          <option value="utdeh">Dehradun</option>
+          </select></td>
+          <td><b>Primary Email : <sup style="color: red;">*</sup></b><input type="email" name="email" required style="width: 200px; height: 25px;" placeholder="Enter Email"><br><br>
+            <b>Secondary Email: </b><input type="email" name="email" required style="width: 200px; height: 25px;" placeholder="Enter Email">
+         </td>     
+     </tr>
+     <tr>
+      <td><b>Pincode :<sup style="color: red;">*</sup></b>
+       <input type="text" name="pcode" style="width: 200px; height: 20px;" required></td>
+     </tr>
+   </table>
+   <hr>
+<!-- ********************************************************************************************************************* -->
+   <table width="100%">
+     <tr>
+       <td><b>11. Are you currently working with C-DAC? :<sup style="color: red;">*</sup></b></td>
+       <td>
+        <select name="yon" style="width: 300px; height: 30px;" required>
+          <option value="no" selected>No</option>
+          <option value="yes">Yes</option>
+          </select>
+       </td>
+     </tr>
+     <tr>
+      <td><b>12.Are you employed in any Govt./ Semi-Govt./ PSU/<br>Autonomous Bodies? :<sup style="color: red;">*</sup></b></td>
+      <td>
+       <select name="yon" style="width: 300px; height: 30px;" required>
+         <option value="no" selected>Government</option>
+         <option value="yes">Semi-Govenment</option>
+         <option value="yes">PSU</option>
+         </select>
+     </tr>
+   </table>
+
+   <p>If <b>"Yes"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview.</p>
+
+   <table width="100%">
+     <tr>
+       <td><b>13. Have you ever been interviewed for recruitment <br>in any post in C-DAC earlier? :<sup style="color: red;">*</sup></b></td>
+       <td>
+        <select name="yOn" style="width: 300px; height: 30px;" required>
+          <option value="no" selected>No</option>
+          <option value="yes">Yes</option>
+          </select>
+       </td>
+     </tr>
+   </table>
+   <hr>
+<!-- *************************************************************************************************************** -->
+   <p><b>14.Academic & Professional Qualifications</b>(Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD)</p>
+  
+   <table border="1" style="border-spacing: 0px; width: 100%;">
+     <tr>
+       <th>Qualifications<sup style="color: red;">*</sup></th>
+       <th>Name of Institute/ Board/<br>University<sup style="color: red;">*</sup></th>
+       <th>Specialization<sup style="color: red;">*</sup></th>
+       <th>Year of<br>Passing<sup style="color: red;">*</sup></th>
+       <th>% Marks<br>(Aggregate)<sup style="color: red;">*</sup></th>
+       <th><b>Class/<br>Division/<br>Rank/<br>Distinction</b></th>
+       <th><button style="background-color: royalblue; color: snow;" type="menu" class="hov">Add<br>row</button></th>
+     </tr>
+
+     <tr>
+       
+       <td id="pad">
+        <select name="educ" required style="width: 100px; height: 30px; margin-left: 30px;">
+          <option value="select" selected>Select</option>
+          <option value="10th">10th</option>
+          <option value="12th">12th</option>
+          <option value="dip">Diploma</option>
+        </select>
+       </td>
+       <td id="pad"><input type="text" name="univer" style="height: 20px;"></td>
+       <td id="pad"><input type="text" name="univer" style="height: 20px; width: 100px;"></td>
+       <td id="pad"><input type="text" name="univer" style="height: 20px; width: 60px;"></td>
+       <td id="pad"><input type="text" name="univer" style="height: 20px; width: 60px;"></td>
+       <td id="pad"><input type="text" name="univer" style="height: 20px; width: 60px;"></td>
+       <td><button style="background-color: red; color: snow;" type="menu" class="hov">Delete</button></td>
+     </tr>
+   </table>
+   <br>
+   <div id="ovfl">
+   <p><b>15. Work Experience (Latest First) &nbsp;</b><input type="checkbox"></p>
+   <table border="1" style="border-spacing: 0px; width: 100%; height: 80px;">
+    <tr>
+      <th>Name of the<br> Organization</th>
+      <th>Designation<br>& Grade</th>
+      <th>Total<br>Salary<br>Drawn</th>
+      <th>From<br>(mon-YYYY)</th>
+      <th>To<br>(mon-YYYY)</th>
+      <th>Nature of work releavent<br>for applied job</th>
+      <th>Add rows</th>
+    </tr>
+    <tr>
+    <td id="padd"><input type="text" name="orgz" style="height: 20px; width: 100px;"></td>
+    <td id="padd"><input type="text" name="orgz" style="height: 20px; width: 70px;"></td>
+    <td id="padd"><input type="text" name="orgz" style="height: 20px; width: 50px;"></td>
+    <td id="padd">
+      <table>
+        <tr>
+          <td><select name="date" style="width: 80px; height: 25px;">
+            <option value="select" selected>Select</option>
+          </select></td>
+          <td><input type="text" name="orgz" style="height: 20px; width: 100px;"></td>
+        </tr>
+      </table>
+    </td>
+    <td id="padd">
+      <table>
+        <tr>
+          <td><select name="date" style="width: 80px; height: 25px;">
+            <option value="select" selected>Select</option>
+          </select></td>
+          <td><input type="text" name="orgz" style="height: 20px; width: 100px;"></td>
+        </tr>
+      </table>
+    </td>
+
+    <td id="padd"><textarea rows="5" cols="2" style="width: 150px;"></textarea></td>
+    <td><button style="background-color: royalblue; color: snow; width: 50px;" type="menu" class="hov">Add row</button></td>
+    </tr>
+   </table>
+   </div><br>
+   <hr>
+<!-- **************************************************************************************************************** -->
+   <table  width="100%">
+     <tr>
+       <td VALIGN=TOP><b>16. Any Short Term Certificate courses/ Training Undergone</b></td>
+       <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea><br>If so, list the details.</td>
+     </tr>
+     <tr><td VALIGN=TOP><b>17. GATE/ UGC-CSIR Examination etc. Qualified, if any</b></td>
+      <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea><br>(Discipline/ Branch, Year of Passing, %)</td></tr>
+     <tr>
+       <td><b>18. a) P.G (M.E/ M. Tech) Project Title</b></td>
+       <td><input type="text" name="pcode" style="width: 300px; height: 20px;"></td>
+     </tr>
+     <tr>
+       <td>&nbsp; &nbsp;&nbsp;&nbsp;   <strong>b) P.G Project Synopsis/ Abstract (Max. 250 Words)</strong></td>
+       <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea></td>
+     </tr>
+     <tr><td><b>19. a) Ph.D Thesis Title</b></td>
+      <td><input type="text" name="pcode" style="width: 300px; height: 20px;"></td></tr>
+     <tr><td>&nbsp; &nbsp;&nbsp;&nbsp;   <strong>b) Ph.D Thesis Synopsis/ Abstract (Max. 250 Words)</strong></td>
+         <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea></td>
+    </tr>
+
+    <tr> <td VALIGN=TOP><b>20. Workshops/ Seminars/ Conferences attended</b></td>
+      <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea></td></tr>
+    <tr><td VALIGN=TOP><b>21. Papers published/ presented / Technical talks delivered</b></td>
+      <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea></td></tr>
+    <tr><td VALIGN=TOP><b>22. Any additional info that may not have been covered</b></td>
+      <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;"></textarea></td></tr>
+    <tr><td VALIGN=TOP><b>23. References (Name, Occupation, Addr, Email, Mobile#)<sup style="color: red;">*</sup></b></td>
+      <td><textarea rows="5" cols="4" style="width: 475px; height: 100px;" required></textarea><br>(at least 2 references)</td></tr>
+</table>
+  <hr>
+  <!-- ******************************************************************************************************************** -->
+  
+  <p><b>Application Fees Details</b></p>
+  
+  <div id="rig">
+    <input type="text" style="width: 400px; height: 250px; border-style: solid; color: black; margin-left: 100px;" >
+    <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Upload proof of payment <sup style="color: red;">*</sup></b><br>
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" style="width: 150px; height: 150px; border-style: solid; color: black;"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="resume">
+    </p>
+    
+  </div>
+ <hr>
+
+
+ <div>
+       <b>Upload your CV </b> File name: [yourname_CV.pdf]<sup style="color: red;">*</sup><br><br>
+       <input type="file" name="resume"><br><br>
+       <b><u>DECLARATION</u></b><br><br>
+       <b>1. I certify that all information provided in this application is true, complete and correct to the best of my knowledge and<br>
+        belief.<br> &nbsp;&nbsp; I understand that any false information or omission of information may disqualify me from consideration for employment<br>
+        and<br> &nbsp;&nbsp; may result in dismissal from the job, if discovered at a later date.</b><br><br>
+        <b>2. I have read and understood the above declaration before signing this.</b><br>
+
+        <label><b> Place <sup style="color: red;">*</sup></b></label>
+        <input type="text" name="place" required style="width: 200px; height: 25px; margin: 50px;">
+        <label ><b>Date : </b></label>
+        <input type="datetime" name="datime" required style="width: 200px; height: 25px; margin: 30px;" placeholder="13/07/2021 @ 3:11 PM"><br>
+        <input type="checkbox" value="accepted"> <b><u>I accept the Terms and Conditions</u></b><br><br>
+
+        <table  style="width: 90%; height: 40px; margin-left: 80px;">
+          <tr>
+            
+           <td> <input type="Submit" value="SUBMIT FORM" style="background-color: green; color: white; height: 30px; width: 150px; border-radius: 5px;" class="pop"></td>
+           <td><input type="Submit" value="SAVE DRAFT" style="background-color: royalblue; color: white; height: 30px; width: 150px; border-radius: 5px;" class="pop"></td>
+            <td><input type="reset" value="CLEAR FORM" style="background-color: yellow; color: black; height: 30px; width: 150px; border-radius: 5px;" class="pop"></td>
+            <td><input type="Submit" value="BACK" style="background-color: brown; color: white; height: 30px; width: 150px; border-radius: 5px;" class="pop"></td>
+          
+          </tr>
+        </table>
+ </div>
+</form>
+</body>
+</div>
+<hr width="1200px">
+<p style="text-align: center;">&#169; 2020 C-DAC. All rights reserved
+  Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)</p>
+</html>
